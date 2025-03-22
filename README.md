@@ -137,6 +137,10 @@ GET /api/tarefas/{id}
 - Aplicação deve seguir boas práticas de organização.
 - Implementação de tratamento de erros simples para respostas adequadas.
 
----
+## 📋 Crie um Pull Request (PR):
+- Após concluir a implementação de sua branch, abra um PR no GitHub para mergear sua branch na main.
 
-Boa sorte no desafio! 🚀✅
+- Descreva no PR o que foi implementado.
+
+## 📂 Estrutura do projeto
+![](image/imagem.png)
