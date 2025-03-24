@@ -16,7 +16,6 @@ O desafio consiste em desenvolver uma API REST para um **sistema de gerenciament
 - **Framework:** Spring Boot 3
 - **Banco de Dados:** H2 (banco em memória para facilitar o aprendizado)
 - **Gerenciador de Dependências:** Maven ou Gradle
-- **Documentação:** Swagger / OpenAPI
 - **Testes:** JUnit 5
 - **Spring Data JPA** – Para facilitar a manipulação do banco de dados.
 - **Spring Validation** – Para validar dados da requisição, como obrigatoriedade de título.
@@ -129,18 +128,16 @@ GET /api/tarefas/{id}
 - O sistema deve permitir listar, atualizar e excluir tarefas.
 
 ## 🧪 Testes
-- Utilize o Postman ou Insomnia para testar os endpoints.
+- Utilize o Postman para testar os endpoints.
 - Escreva testes unitários utilizando **JUnit 5**.
 
+
+<!-- 
 ## 📢 Regras do Desafio
 - Código deve estar versionado no GitHub.
 - Aplicação deve seguir boas práticas de organização.
-- Implementação de tratamento de erros simples para respostas adequadas.
+- Implementação de tratamento de erros simples para respostas adequadas. -->
 
-## 🍴 Faça um fork do repositório:
-- Faça um fork e realize as mudanças criando PRs e branches
 
-- Descreva no PR o que foi implementado.
-
-## 📂 Estrutura do projeto
-![](image/imagem.png)
+<!-- ## 📂 Estrutura do projeto
+![](image/imagem.png) -->
