@@ -19,7 +19,6 @@ O desafio consiste em desenvolver uma API REST para um **sistema de gerenciament
 - **Testes:** JUnit 5
 - **Spring Data JPA** – Para facilitar a manipulação do banco de dados.
 - **Spring Validation** – Para validar dados da requisição, como obrigatoriedade de título.
-- **Spring Actuator** – Para visualizar métricas básicas da aplicação.
 - **Spring DevTools** – Para facilitar o desenvolvimento com reload automático.
 - **Spring Web** - Para facilitar o desenvolvimento de aplicações web seguindo o padrão Model-View-Controller (MVC)
 
