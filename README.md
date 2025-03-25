@@ -136,5 +136,5 @@ GET /api/tarefas/{id}
 - Implementação de tratamento de erros simples para respostas adequadas.
 
 
-<!-- ## 📂 Estrutura do projeto
-![](image/imagem.png) -->
+## 📂 Estrutura do projeto
+![](image/imagem.png)
