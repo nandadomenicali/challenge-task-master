@@ -23,7 +23,7 @@ O desafio consiste em desenvolver uma API REST para um **sistema de gerenciament
 - **Spring Web** - Para facilitar o desenvolvimento de aplicações web seguindo o padrão Model-View-Controller (MVC)
 
 ## 🗄️ Como Instalar o Banco de Dados H2
-1. O H2 já vem configurado no Spring Boot e não exige instalação separada.
+1. O H2 já vem configurado e não exige instalação separada.
 2. No `application.properties`, configure a conexão com o H2:
    ```properties
    spring.datasource.url=jdbc:h2:mem:testdb
@@ -130,12 +130,10 @@ GET /api/tarefas/{id}
 - Utilize o Postman para testar os endpoints.
 - Escreva testes unitários utilizando **JUnit 5**.
 
-
-<!-- 
 ## 📢 Regras do Desafio
 - Código deve estar versionado no GitHub.
 - Aplicação deve seguir boas práticas de organização.
-- Implementação de tratamento de erros simples para respostas adequadas. -->
+- Implementação de tratamento de erros simples para respostas adequadas.
 
 
 <!-- ## 📂 Estrutura do projeto
