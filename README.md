@@ -3,6 +3,10 @@
 ## 📌 Objetivo
 O desafio consiste em desenvolver uma API REST para um **sistema de gerenciamento de tarefas**. A API permitirá que os usuários criem, atualizem, excluam e listem tarefas de forma simples.
 
+## 📢 Avisos antes de começar
+- Leia com atenção este documento todo e tente seguir ao máximo as instruções;
+- Realize um `fork` desse repositório e realize suas mudanças;
+
 ## 🎯 Requisitos Funcionais
 - Criar endpoints para:
   - Criar uma nova tarefa.
@@ -18,7 +22,6 @@ O desafio consiste em desenvolver uma API REST para um **sistema de gerenciament
 - **Gerenciador de Dependências:** Maven
 - **Testes:** JUnit 5
 - **Spring Data JPA** – Para facilitar a manipulação do banco de dados.
-- **Spring Validation** – Para validar dados da requisição, como obrigatoriedade de título.
 - **Spring DevTools** – Para facilitar o desenvolvimento com reload automático.
 - **Spring Web** - Para facilitar o desenvolvimento de aplicações web seguindo o padrão Model-View-Controller (MVC)
 
@@ -45,80 +48,80 @@ O desafio consiste em desenvolver uma API REST para um **sistema de gerenciament
 ## 📡 Endpoints da API
 ### 1️⃣ Criar uma nova tarefa
 ```http
-POST /api/tarefas
+POST /api/task
 ```
 **Corpo da requisição:**
 ```json
 {
-  "titulo": "Estudar Spring Boot",
-  "descricao": "Ler a documentação oficial e fazer exercícios."
+  "title": "Estudar Spring Boot",
+  "description": "Ler a documentação oficial e fazer exercícios."
 }
 ```
 **Resposta:**
 ```json
 {
   "id": 1,
-  "titulo": "Estudar Spring Boot",
-  "descricao": "Ler a documentação oficial e fazer exercícios."
+  "title": "Estudar Spring Boot",
+  "description": "Ler a documentação oficial e fazer exercícios."
 }
 ```
 
 ### 2️⃣ Listar todas as tarefas
 ```http
-GET /api/tarefas
+GET /api/tasks
 ```
 **Resposta:**
 ```json
 [
   {
     "id": 1,
-    "titulo": "Estudar Spring Boot",
-    "descricao": "Ler a documentação oficial e fazer exercícios."
+    "title": "Estudar Spring Boot",
+    "description": "Ler a documentação oficial e fazer exercícios."
   }
 ]
 ```
 
 ### 3️⃣ Atualizar uma tarefa existente
 ```http
-PUT /api/tarefas/{id}
+PUT /api/task/{id}
 ```
 **Corpo da requisição:**
 ```json
 {
-  "titulo": "Estudar Spring Boot - Parte 2",
-  "descricao": "Fazer mais exercícios."
+  "title": "Estudar Spring Boot - Parte 2",
+  "description": "Fazer mais exercícios."
 }
 ```
 **Resposta:**
 ```json
 {
   "id": 1,
-  "titulo": "Estudar Spring Boot - Parte 2",
-  "descricao": "Fazer mais exercícios."
+  "title": "Estudar Spring Boot - Parte 2",
+  "description": "Fazer mais exercícios."
 }
 ```
 
 ### 4️⃣ Excluir uma tarefa
 ```http
-DELETE /api/tarefas/{id}
+DELETE /api/task/{id}
 ```
 **Resposta:**
 ```json
 {
-  "mensagem": "Tarefa excluída com sucesso!"
+  "message": "Tarefa excluída com sucesso!"
 }
 ```
 
 ### 5️⃣ Buscar uma tarefa pelo ID
 ```http
-GET /api/tarefas/{id}
+GET /api/task/{id}
 ```
 **Resposta:**
 ```json
 {
   "id": 1,
-  "titulo": "Estudar Spring Boot",
-  "descricao": "Ler a documentação oficial e fazer exercícios."
+  "title": "Estudar Spring Boot",
+  "description": "Ler a documentação oficial e fazer exercícios."
 }
 ```
 
@@ -130,11 +133,9 @@ GET /api/tarefas/{id}
 - Utilize o Postman para testar os endpoints.
 - Escreva testes unitários utilizando **JUnit 5**.
 
-## 📢 Regras do Desafio
+## 🚀 Regras do Desafio
 - Código deve estar versionado no GitHub.
 - Aplicação deve seguir boas práticas de organização.
-- Implementação de tratamento de erros simples para respostas adequadas.
-
 
 ## 📂 Estrutura do projeto
 ![](image/imagem.png)
